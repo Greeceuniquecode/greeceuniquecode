@@ -6,7 +6,6 @@ import {
   Database, 
   Server, 
   Smartphone,
-  User,
   Calendar,
   MapPin,
   Coffee
