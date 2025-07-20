@@ -10,6 +10,9 @@ import {
   MapPin,
   Coffee
 } from 'lucide-react';
+import myphoto from '../assets/Images/myphoto.png';
+import project1 from '../assets/Images/project1.png';
+import project2 from '../assets/Images/project2.png';
 
 interface Project {
   id: number;
@@ -31,7 +34,7 @@ const ProjectPage: React.FC = () => {
       technologies: ["React", "Typescript", "JavaScript", "Html", "Tailwind CSS"],
       githubUrl: "https://github.com/Greeceuniquecode/nagarpalika-frontend",
       liveUrl: "https://itaharimun1.vercel.app/",
-      image: "/src/assets/Images/project1.png",
+      image: project1,
       category: "Full-Stack"
     },
     {
@@ -41,7 +44,7 @@ const ProjectPage: React.FC = () => {
       technologies: ["Laravel", "Zammp", "PostgreSQL", "Php", "Docker"],
       githubUrl: "https://github.com/Greeceuniquecode/LARAVEL-TMS",
       liveUrl: "",
-      image: "/src/assets/Images/project2.png",
+      image: project2,
       category: "Full-Stack"
     },
   ];
@@ -73,7 +76,7 @@ const ProjectPage: React.FC = () => {
               <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl p-8">
                 <div className="flex items-center mb-6">
                 <div className="w-16 h-16 rounded-full flex items-center justify-center mr-4 overflow-hidden">
-                  <img src="/src/assets/Images/myphoto.png" alt="Profile" className="w-full h-full object-cover rounded-full" />
+                  <img src={myphoto} alt="Profile" className="w-full h-full object-cover rounded-full" />
                 </div>
                   <div>
                     <h2 className="text-2xl font-bold text-gray-900">Full-Stack Developer</h2>

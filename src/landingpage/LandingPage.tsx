@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import myphoto from '../assets/Images/myphoto.png';
 
 const LandingPage: React.FC = () => {
   const [currentStackIndex, setCurrentStackIndex] = useState<number>(0);
@@ -63,7 +64,7 @@ const LandingPage: React.FC = () => {
               {/* Description */}
               <div className="space-y-6 text-gray-800 text-lg leading-relaxed lg:mx-0">
                 <p>
-                  I'm a dedicated full-stack developer with <span className="text-blue-700 font-semibold">4+ years</span> of experience crafting modern web apps using React, Laravel, Django, and more.
+                  I'm a dedicated full-stack developer with <span className="text-blue-700 font-semibold">3+ years</span> of experience crafting modern web apps using React, Laravel, Django, and more.
                 </p>
                 <p>
                   My passion for clean, scalable code and learning new technologies drives me to build smart, future-ready solutions.
@@ -122,7 +123,7 @@ const LandingPage: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full p-1 shadow-2xl group-hover:shadow-3xl transition-all duration-300">
                   <div className="w-full h-full rounded-full bg-black p-2 flex items-center justify-center overflow-hidden">
 <img 
-  src="/src/assets/Images/myphoto.png"
+  src={myphoto}
   alt="Profile"
   className="w-full h-full object-cover rounded-full transform group-hover:scale-105 transition-transform duration-300"
 />

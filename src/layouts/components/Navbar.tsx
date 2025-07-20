@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import titlelogo from '../../assets/Images/titlelogo.png';
 
 interface NavItem {
   label: string;
@@ -23,10 +24,10 @@ const Navbar: React.FC = () => {
       <nav className="bg-white shadow-lg border-b-4 border-blue-700 fixed top-0 left-0 right-0 z-50 w-full">
         <div className="w-full">
           <div className="flex justify-between items-center h-16">
-            {/* Logo */}
+            {/* Logo */} 
             <div className="flex-shrink-0 flex items-center gap-2 pl-8">
               <img 
-                src="/src/assets/Images/titlelogo.png" 
+                src={titlelogo} 
                 alt="Title Logo" 
                 className="w-12 h-12 rounded-full object-cover"
               />
